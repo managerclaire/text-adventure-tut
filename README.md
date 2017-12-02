@@ -1,6 +1,6 @@
 Overview
 -------
-This project was developed off of Philip Johnson's text-adventure-tut.s.
+This project was developed off of Philip Johnson's text-adventure-tut.
 
 Tutorial
 --------
