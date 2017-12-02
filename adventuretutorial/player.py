@@ -1,7 +1,7 @@
 import random
 import items, world
 
-__author__ = 'Phillip Johnson'
+__author__ = 'managerclaire'
 
 
 class Player():
@@ -61,4 +61,3 @@ class Player():
         available_moves = tile.adjacent_moves()
         r = random.randint(0, len(available_moves) - 1)
         self.do_action(available_moves[r])
-

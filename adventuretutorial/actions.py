@@ -1,19 +1,18 @@
 """Describes the actions a player can make in the game"""
-__author__ = 'Phillip Johnson'
+__author__ = 'managerclaire'
 
 from player import Player
 
 
 class Action():
-    """The base class for all actions"""
+    #The base class for all actions
     def __init__(self, method, name, hotkey, **kwargs):
-        """Creates a new action
-
-        :param method: the function object to execute
-        :param name: the name of the action
-        :param ends_turn: True if the player is expected to move after this action else False
-        :param hotkey: The keyboard key the player should use to initiate this action
-        """
+        #Creates a new action
+        #param method: the function object to execute
+        #param name: the name of the action
+        #param ends_turn: True if the player is expected to move after this action else False
+        #param hotkey: The keyboard key the player should use to initiate this action
+        
         self.method = method
         self.hotkey = hotkey
         self.name = name

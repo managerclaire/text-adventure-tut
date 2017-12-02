@@ -1,7 +1,5 @@
-"""
-A simple text adventure designed as a learning experience for new programmers.
-"""
-__author__ = 'Phillip Johnson'
+#A simple text adventure designed as a learning experience for new programmers.
+__author__ = 'managerclaire'
 import world
 from player import Player
 

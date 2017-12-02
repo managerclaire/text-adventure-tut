@@ -1,11 +1,11 @@
-"""Describes the tiles in the world space."""
-__author__ = 'Phillip Johnson'
+#Describes the tiles in the world space.
+__author__ = 'managerclaire'
 
 import items, enemies, actions, world
 
 
 class MapTile:
-    """The base class for a tile within the world space"""
+    #The base class for a tile within the world space
     def __init__(self, x, y):
         """Creates a new tile.
 
@@ -16,15 +16,15 @@ class MapTile:
         self.y = y
 
     def intro_text(self):
-        """Information to be displayed when the player moves into this tile."""
+        #Information to be displayed when the player moves into this tile.
         raise NotImplementedError()
 
     def modify_player(self, the_player):
-        """Process actions that change the state of the player."""
+        #Process actions that change the state of the player.
         raise NotImplementedError()
 
     def adjacent_moves(self):
-        """Returns all move actions for adjacent tiles."""
+        #Returns all move actions for adjacent tiles.
         moves = []
         if world.tile_exists(self.x + 1, self.y):
             moves.append(actions.MoveEast())
@@ -37,7 +37,7 @@ class MapTile:
         return moves
 
     def available_actions(self):
-        """Returns all of the available actions in this room."""
+        #Returns all of the available actions in this room.
         moves = self.adjacent_moves()
         moves.append(actions.ViewInventory())
 
@@ -68,7 +68,7 @@ class EmptyCavePath(MapTile):
 
 
 class LootRoom(MapTile):
-    """A room that adds something to the player's inventory"""
+    #A room that adds something to the player's inventory
     def __init__(self, x, y, item):
         self.item = item
         super().__init__(x, y)
