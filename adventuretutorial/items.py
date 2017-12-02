@@ -37,12 +37,12 @@ class Dagger(Weapon):
                          value=10,
                          damage=10)
 
-class Sword(Weapon):
-    def __init__(self):
-        super().__init__(name="Sword",
-                        description="A standard knight sword made of steel."
-                        value=15
-                        damage=20)
+#class Sword(Weapon):
+    #def __init__(self):
+        #super().__init__(name="Sword",
+                        #description="A standard knight sword made of steel."
+                        #value=15
+                        #damage=20)
 
 
 class Gold(Item):
