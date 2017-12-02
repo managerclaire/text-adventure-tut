@@ -1,8 +1,6 @@
 Overview
 -------
-This project was developed as a response to the large number of beginning Python developer who want to learn how to write a text adventure.
-
-Although there are many approaches, this project is designed to be expandable with "pluggable" elements.
+This project was developed off of Philip Johnson's text-adventure-tut.s.
 
 Tutorial
 --------
